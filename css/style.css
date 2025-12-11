@@ -2,7 +2,7 @@ body {
   background-color: #F5F3F1; 
   color: #1A1A1A;          
   font-family: "Times New Roman", serif;
-  background-image: url('../images/background2.jpg'); /*add image!*/
+  background-image: url('../images/background2.jpg'); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -55,26 +55,27 @@ h1{
   transform: translateY(-2px);
 }
 
-
 .dropdown-menu {
   position: absolute;
   top: 110%;
-  left: 0;
+  left: 0;           
   background: #4A1F1F;
   border-radius: 10px;
   padding: 6px 0;
   list-style: none;
-  margin: 0;
+  margin: 0;         
   width: 200px;
   display: none;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: left;
 }
 
 .dropdown-menu a {
   display: block;
-  padding: 10px 15px;
   color: #F7F7F7;
   text-decoration: none;
+  padding: 10px 15px; 
+  display: block;
 }
 
 .dropdown-menu a:hover {
@@ -110,6 +111,8 @@ h1{
   box-shadow: 0 3px 12px rgba(0,0,0,0.15);
 }
 
+#csphoto1,
+#csphoto2,
 #aboutphoto,
 #westernphoto {
   width: 40%;
@@ -118,6 +121,8 @@ h1{
   align-items: center;
 }
 
+#csdesc1,
+#csdesc2,
 #aboutme,
 #western {
   width: 50%;
@@ -132,12 +137,16 @@ h1{
     padding: 5%;
   }
 
+   #csphoto1,
+  #csphoto2,
   #aboutphoto,
   #westernphoto {
     width: 100%;
     order: 1;
   }
 
+  #csdesc1,
+  #csdesc2,
   #aboutme,
   #western {
     width: 100%;
@@ -166,7 +175,7 @@ fieldset {
 }
 
 fieldset legend {
-  color: #4A1F1F;  /* your oxblood */
+  color: #4A1F1F;  
   background: rgba(255,255,255,0.8);
   padding: 4px 10px;
   border-radius: 6px;
@@ -186,7 +195,6 @@ fieldset legend {
   min-width: 250px;
 }
 
-/* Stack on small screens */
 @media (max-width: 700px) {
   .form-row {
     flex-direction: column;
@@ -212,6 +220,10 @@ input, select, textarea {
   border: 1px solid #777;
   background: #FAFAFA;
   box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
 }
 
 input[type="submit"] {
@@ -344,7 +356,6 @@ p.resume{
   padding-left: 20px;
 }
 
-/* Mobile: stack columns */
 @media (max-width: 700px) {
   .skills-section {
     flex-direction: column;
@@ -357,7 +368,6 @@ p.resume{
   }
 }
 
-/* Hamburger Menu */
 #toggle,
 .hamburger,
 .nav {
@@ -365,6 +375,8 @@ p.resume{
 }
 
 @media (max-width: 700px) {
+
+
   .desktop-nav {
     display: none !important;
   }
@@ -375,7 +387,7 @@ p.resume{
 
   .hamburger {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 5%;
     width: 2em;
