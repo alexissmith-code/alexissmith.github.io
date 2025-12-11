@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../javascript/smith_website.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis Smith - Contact</title>
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <ul class="mynav desktop-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Portfolio ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="computer_science_portfolio.html">Computer Science</a></li>
+          <li><a href="graphic_design_portfolio.html">Graphic Design</a></li>
+        </ul>
+      </li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+    <!-- Mobile Hamburger Menu -->
+    <input id="toggle" type="checkbox">
+    <label for="toggle" class="hamburger">
+      <div class="top-bun"></div>
+      <div class="meat"></div>
+      <div class="bottom-bun"></div>
+    </label>
+    
+    <div class="nav">
+      <div class="nav-wrapper">
+        <nav>
+          <a href="../index.html">Home</a><br>
+          <a href="computer_science_portfolio.html">Computer Science Portfolio</a><br>
+          <a href="graphic_design_portfolio.html">Graphic Design Portfolio</a><br>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </div>
+    </div>
+
+    <div id="headersurvey">
+      <h1>Contact Me</h1>
+    </div>
+    
+    <div id="surveyform">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your Information</legend>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+            </div>
+          </div>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Reason for Contact</legend>
+          <label for="topic">I'm interested in:</label><br>
+          <select id="topic" name="topic" required>
+            <option value="">-- Please Select --</option>
+            <option value="webdev">Web Development</option>
+            <option value="graphicdesign">Graphic Design</option>
+            <option value="software">Software Project</option>
+            <option value="collaboration">Collaboration Opportunity</option>
+            <option value="other">Other</option>
+          </select><br><br>
+          <label>Preferred Contact Method:</label><br>
+          <input type="radio" name="contactmethod" value="email" checked> Email
+          <input type="radio" name="contactmethod" value="phone"> Phone
+          <input type="radio" name="contactmethod" value="linkedin"> LinkedIn<br><br>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Your Message</legend>
+          <textarea id="message" name="message" cols="40" rows="6" placeholder="Write your message here..." required></textarea>
+        </fieldset>
+        
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+  </body>
+</html>
