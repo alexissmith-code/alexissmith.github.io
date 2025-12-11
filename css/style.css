@@ -47,7 +47,6 @@ h1{
   color: #F7F7F7;
   text-decoration: none;
   font-weight: bold;
-  border: 10px solid #B6B09F;
   transition: background 0.2s ease, transform 0.15s ease;
 }
 
