@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="javascript/smith_website.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis Smith</title>
+  </head>
+  <body>
+    <!-- Desktop Navigation (visible on larger screens) -->
+    <ul class="mynav desktop-nav">
+      <li><a href="html/resume.html">Resume</a></li>
+      <li class="dropdown">
+        <a href="#">Portfolio ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="html/computer_science_portfolio.html">Computer Science</a></li>
+          <li><a href="html/graphic_design_portfolio.html">Graphic Design</a></li>
+        </ul>
+      </li>
+      <li><a href="html/contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Hamburger Menu (visible on smaller screens) -->
+    <input id="toggle" type="checkbox">
+    <label for="toggle" class="hamburger">
+      <div class="top-bun"></div>
+      <div class="meat"></div>
+      <div class="bottom-bun"></div>
+    </label>
+    
+    <div class="nav">
+      <div class="nav-wrapper">
+        <nav>
+          <a href="html/resume.html">Resume</a><br>
+          <a href="html/computer_science_portfolio.html">Computer Science Portfolio</a><br>
+          <a href="html/graphic_design_portfolio.html">Graphic Design Portfolio</a><br>
+          <a href="html/contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <div id="headerhome">
+      <h1 class="home">Alexis Smith</h1>
+    </div>
+    
+    <div id="about-section" class="section">
+      <div id="aboutphoto">
+        <img src="images/home.JPEG" alt="Photo of me">
+      </div>
+      <div id="aboutme">
+        <h2 class="home">About Me</h2>
+        <p>I am currently a senior attending Western Colorado University. I have an emphasis
+          in Information Security and am set to graduate in May 2026. I am also in the process
+          of obtaining a Full Stack Web Development, Software Engineering, and Graphic Design
+          certificate from Western. While my emphasis is in Information Security I do have
+          interest in Web Development and Software Development and at the moment I am looking
+          for more experience in either sector.</p>
+      </div>
+    </div>
+    
+    <div id="western-section" class="section">
+      <div id="western">
+        <h2 class="home">Western Colorado University</h2>
+        <p>I chose to attend Western Colorado University because of its accessibility to outdoor recreation. 
+           I love snowboarding, rafting, and mountain biking with my friends! I also love the small class 
+           sizes and accessibility to professors.</p>
+      </div>
+      <div id="westernphoto">
+        <img src="images/western.png" alt="Western Logo">
+      </div>
+    </div>
+  </body>
+</html>
